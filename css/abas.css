@@ -1,0 +1,38 @@
+.btnAba {
+    display: inline-block;
+    min-width: 100px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btnAba.active {
+    background-color: #87c4f8;
+    font-weight: bold;
+    color: black;
+}
+
+.btnAba:hover {
+    background-color: #27426a;
+}
+
+.aba-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    height: 80%;
+}
+
+.aba-content.active {
+    display: block;
+}
+
+#configuracao {
+    height: 100%;
+}

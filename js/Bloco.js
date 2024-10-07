@@ -1,10 +1,11 @@
 class Bloco {
-    constructor () {
+    constructor (idBlocos) {
         this.scripts = []
+        this.idBlocos = idBlocos
     }
 
-    createScripts (arrayScripts, id, clear) {
-        document.querySelector(`#${id}`).innerHTML = ''
+    createScripts (arrayScripts, clear) {
+        document.querySelector(`#${this.idBlocos}`).innerHTML = ''
         
         if(clear){
             this.scripts = []
@@ -25,7 +26,7 @@ class Bloco {
             var texto = (el.key !== undefined) ? `[${el.key}] ` : ''
             texto += (el.script != undefined) ? el.script : ""
 
-            document.querySelector(`#${id}`).innerHTML += `
+            document.querySelector(`#${this.idBlocos}`).innerHTML += `
                 <div class='boxInputsBts' id='box-btn-inp-script${compl_id}'>
                     <button 
                         id='${compl_id}btn-script'

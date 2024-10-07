@@ -70,7 +70,7 @@ class Objeto {
                         alert("Formato do texto do txt errado, pfv, colocar os seus textos padrão entre chaves.\n EX: {padrão 1} {padrão 2}...")
                     }
                 }).finally ( () => {
-                    bloco.createScripts(scripts,'box-scripts',false)
+                    bloco.createScripts(scripts,false)
                 })
 
         } catch (error) {

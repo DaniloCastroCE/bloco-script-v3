@@ -2,7 +2,7 @@
 Título: Bloco de Script 3.0
 Criando: 04/10/2024
 por Danilo Castro CE
-Atualização: 04/10/2024
+Atualização: 07/10/2024
 -->
 
 <!DOCTYPE html>
@@ -12,11 +12,12 @@ Atualização: 04/10/2024
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Danilo Castro CE">
-    <title>Bloco de Script 3.0</title>
+    <title>Bloco de Script 3.0 - Em construção</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/abas.css">
     <link rel="stylesheet" href="./css/botao.css">
+    <link rel="stylesheet" href="./css/scripts.css">
 </head>
 
 <body onclick="modal.onclickBody(event)">
@@ -49,7 +50,7 @@ Atualização: 04/10/2024
 
         </div>
     </section>
-    <section id="main">
+    <section>
         <div class="boxRelative">
             <span id="config" onclick="modal.openModal(
                 obj = {
@@ -65,10 +66,15 @@ Atualização: 04/10/2024
             </span>
         </div>
     </section>
-    <script type="text/javascript" src="./js/abas.js"></script>
-    <script type="text/javascript" src="./js/modal.js"></script>
-    <script type="text/javascript" src="./js/bloco.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <section>
+        <div id="box-scripts"></div>
+        <input type="file" id="lerTxt" accept=".txt" onchange="objetos.lerTxt(event)">
+    </section>
+    <script type="text/javascript" src="./js/Objeto.js"></script>
+    <script type="text/javascript" src="./js/Abas.js"></script>
+    <script type="text/javascript" src="./js/Modal.js"></script>
+    <script type="text/javascript" src="./js/Bloco.js"></script>
+    <script type="text/javascript" src="./js/Main.js"></script>
 </body>
 
 </html>
